@@ -17,9 +17,9 @@ def hash_json(json_object):
     enc = json_object.encode()
     b64 = base64.encodebytes(enc)
 
-    result = hashlib.sha256(b64) 
-  
-    print("The SHA256 hexadecimal equivalent of hash is : ", end ="") 
+    result = hashlib.sha256(b64)
+
+    print("The SHA256 hexadecimal equivalent of hash is : ", end ="")
     print(result.hexdigest())
     return(result.hexdigest())
 
