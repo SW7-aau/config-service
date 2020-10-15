@@ -22,7 +22,7 @@ def get_config_file():
 
     if same_version(new_config_hash):
         return "Same Version"
-    
+
     update_config_file(config_file)
     update_valid_hash(new_config_hash)
 
