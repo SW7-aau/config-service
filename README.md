@@ -17,10 +17,4 @@
 
 -------------
 ###Sequence Diagram
-                    
-```seq
-GCP Endpoint->Leader: Send JSON 
-Note right of GCP Endpoint: Leader checks SHA256 hash  \n and decide to keep or update its local version 
-Leader->Follower: Send JSON and \n hash to all followers
-Follower->>Follower: Followers  checks SHA256 hash  \n and decide to keep or update its local version 
-```
+![](https://i.imgur.com/jfpIX3x.png)
