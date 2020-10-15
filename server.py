@@ -14,7 +14,7 @@ def update_valid_hash(new_hash):
 
 def update_config_file(config):
     print("Updated Configuration File")
-  
+
 @app.route('/updateConfigFile', methods=['GET','POST'])
 def get_config_file():
     config_file = request.get_json()
