@@ -16,5 +16,6 @@
 - Fetch IP addresses from MySQL database
 
 -------------
-###Sequence Diagram
+### Sequence Diagram
+
 ![](https://i.imgur.com/jfpIX3x.png)
