@@ -9,7 +9,6 @@ def generate_config_object():
     cfgDict["neighbours"] = ["127.0.0.1", "127.0.0.2", "127.0.0.3"]
 
     json_object = json.dumps(cfgDict, indent = 4)
-    print(json_object)
     return(json_object)
 
 # Inputs a JSON objects and output the SHA256 equivalent hash version of it
@@ -18,9 +17,6 @@ def hash_json(json_object):
     b64 = base64.encodebytes(enc)
 
     result = hashlib.sha256(b64)
-
-    print("The SHA256 hexadecimal equivalent of hash is : ", end ="")
-    print(result.hexdigest())
     return(result.hexdigest())
 
 # Take a JSON object as input and generates a configuration file
